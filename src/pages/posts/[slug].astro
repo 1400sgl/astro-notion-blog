@@ -102,10 +102,10 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
 >
   <div slot="main" class={styles.main}>
     <div class={styles.post}>
+      <PostTitle post={post} enableLink={false} />
       <PostDate post={post} />
       <PostLastUpdated post={post} />
       <PostTags post={post} />
-      <PostTitle post={post} enableLink={false} />
       <PostBody blocks={blocks} />
 
       <footer>
