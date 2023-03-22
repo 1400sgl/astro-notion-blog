@@ -9,7 +9,6 @@ import {
 import Layout from '../../../../../layouts/Layout.astro'
 import NoContents from '../../../../../components/NoContents.astro'
 import PostDate from '../../../../../components/PostDate.astro'
-import PostLastUpdated from '../../../../../components/PostLastUpdated.astro'
 import PostTags from '../../../../../components/PostTags.astro'
 import PostTitle from '../../../../../components/PostTitle.astro'
 import PostFeaturedImage from '../../../../../components/PostFeaturedImage.astro'
@@ -70,7 +69,6 @@ const currentTag = posts[0].Tags.find((t) => t.name === tag)
         posts.map((post) => (
           <div class={styles.post} key={post.Slug}>
             <PostDate post={post} />
-            <PostLastUpdated post={post} />
             <PostTags post={post} />
             <PostTitle post={post} />
             <PostFeaturedImage post={post} />
