@@ -9,12 +9,12 @@ export interface Props {
 const { post } = Astro.props
 ---
 
-<div class="post-date">
+<div class="post-LastUpdated">
   {post.LastUpdated ? getDateStr(post.LastUpdated) : ''}
 </div>
 
 <style>
-  .post-date {
+  .post-LastUpdated {
     padding: 0 0 0.3rem;
     font-size: 0.9rem;
   }
