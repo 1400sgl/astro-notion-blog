@@ -150,7 +150,7 @@ export const getPageLink = (page: number, tag: string) => {
     : pathJoin(BASE_PATH, `/posts/page/${page.toString()}`)
 }
 
-export const getDateStr = (date: string,Last_edited_time: string) => {
+export const getDateStr = (date: string) => {
   const dt = new Date(date)
 
   if (date.indexOf('T') !== -1) {
