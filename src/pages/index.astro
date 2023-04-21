@@ -40,6 +40,9 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
               <span><span>📅</span><PostDate post={post} /></span>
               <span><span>🏷️</span><PostTags post={post} /></span>
             </div>
+            <style>
+            display:inline-block;
+            </style>
             <PostFeaturedImage post={post} />
             <PostExcerpt post={post} />
             <ReadMoreLink post={post} />
