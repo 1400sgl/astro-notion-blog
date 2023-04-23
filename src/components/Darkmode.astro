@@ -4,9 +4,9 @@
 <div class="mode-wrap">
     <input type="checkbox" id="mode-toggle" tabindex="0" />
     <label for="mode-toggle"><span></span></label>
-  </div>
+</div>
   
-  <style is:global>
+<style is:global>
   /* --------------------
   layout.astro
   -------------------- */
@@ -275,9 +275,9 @@
   .darkmode .mode-wrap #mode-toggle + label {
     border-color: var(--accents-1);
   }
-  </style>
+</style>
   
-  <script is:inline>
+<script is:inline>
   /* --------------------
   ダークモード切り替え
   -------------------- */
@@ -322,4 +322,4 @@
   } else if (localStorage.getItem("mode") === "light") {
     darkModeOff();
   }
-  </script>
+</script>
