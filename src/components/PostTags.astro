@@ -11,8 +11,8 @@ export interface Props {
 const { post, enableLink = true } = Astro.props
 ---
 
+<span className="fs12 mr-2">🔖</span>
 <div class="post-tags">
-  <span className="fs12 mr-2">🔖</span>
   {
     post.Tags &&
       post.Tags.length > 0 &&
