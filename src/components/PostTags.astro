@@ -12,14 +12,14 @@ const { post, enableLink = true } = Astro.props
 ---
 
 <div class="post-tags">
-  <span>🏷️</span>
+  <div>🏷️</div>
   {
     post.Tags &&
       post.Tags.length > 0 &&
       post.Tags.map((tag: SelectProperty) => {
         if (enableLink) {
           return (
-          <span>🔖</span>
+            <div>🔖</div>
             <a href={getTagLink(tag.name)} class={`tag ${tag.color}`}>
               {tag.name}
             </a>
