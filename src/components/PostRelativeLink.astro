@@ -22,8 +22,6 @@ const { prevPost, nextPost } = Astro.props
         </a>
       )
     }
-  </div>
-  <div>
     {
       prevPost && (
         <a href={getPostLink(prevPost.Slug)} class="colored">
