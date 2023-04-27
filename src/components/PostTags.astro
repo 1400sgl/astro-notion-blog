@@ -12,7 +12,11 @@ const { post, enableLink = true } = Astro.props
 ---
 
 <div class="post-tags">
-  <div>🏷️</div>
+  {
+    post.Tags &&
+      post.Tags.length > 0 &&
+        <div>🏷️</div>
+  }
   {
     post.Tags &&
       post.Tags.length > 0 &&
